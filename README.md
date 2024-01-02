@@ -6,7 +6,7 @@ With this project my main goal was to better understand [Web Components] and esp
 
 The first thing I learned that we cannot have nice things because of device and browser compatibility.
 
-_Extending native elements is not an option._ The [`is`] global attribute which would let us extend native elements but Safari does not support it and probably never will. References: [Bug 182671](https://bugs.webkit.org/show_bug.cgi?id=182671), [WebKit/standards-positions#97](https://github.com/WebKit/standards-positions/issues/97).
+_Extending native elements is not an option._ The [`is`][is] global attribute which would let us extend native elements but Safari does not support it and probably never will. References: [Bug 182671](https://bugs.webkit.org/show_bug.cgi?id=182671), [WebKit/standards-positions#97](https://github.com/WebKit/standards-positions/issues/97).
 
 _The datepicker should be an inline element._ Showing input dialogs is not recommended because on some devices like Android the back button/gesture is used to close them, and they navigate back in the browser history when a non-native input dialog is shown. There is [WICG/close-watcher] research which tries to address this problem but currently not available. [History API] could be used to create a similar behaviour, however, it is not easy and wasn't the goal of this research.
 
